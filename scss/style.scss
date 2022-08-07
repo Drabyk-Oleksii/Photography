@@ -1,0 +1,63 @@
+.container{
+  width: 1170px;
+  margin: 0 auto;
+}
+h2{
+  margin-top: 120px;
+  margin-bottom: 80px;
+  font-family: Delius Unicase;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 45px;
+  letter-spacing: 0.05em;
+  text-align: center;
+}
+.grid{
+  display: grid;
+}
+.block{
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  padding:20px;
+  justify-content: space-between;
+  color: white;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23.44px;
+  &:hover{
+    transition: all 0.5s;
+    box-shadow: 2px 2px 10px black;
+    .icon{
+      visibility: visible;
+    }
+  }
+}
+.space{
+  display: flex;
+  justify-content: space-between;
+}
+.icon{
+  visibility: hidden;
+}
+.like,.download{
+  background: rgba(224, 224, 224, 0.5);
+  border-radius: 8px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:hover{
+    background: white;
+    transition: all 0.5s;
+  }
+}
+.date{
+  font-weight: 400;
+}
+
+@import "section_1";
+@import "section_2";
+@import "section_3";
